@@ -122,3 +122,62 @@ Isso irá lançar a aplicação em `http://localhost:3000`.
                 }
                 ```
             - **Resposta de Sucesso:**
+            ```json
+            {
+                "id": "number",
+                "name": "string",
+                "position": "string",
+                "salary": "number"
+            }
+            ```
+            - **Resposta de Erro:**
+            ```json
+            {
+                "message": "Nome, posição e salário são obrigatórios"
+            }
+            ```
+
+            3. **Atualizar Funcionário**
+                - **URL:** `/employees/{id}`
+                - **Método:** `PUT`
+                - **Descrição:** Atualiza as informações de um funcionário existente.
+                - **Corpo da Requisição:**
+                    ```json
+                    {
+                        "name": "string",
+                        "position": "string",
+                        "salary": "number"
+                    }
+                    ```
+                - **Resposta de Sucesso:**
+                    ```json
+                    {
+                        "id": "number",
+                        "name": "string",
+                        "position": "string",
+                        "salary": "number"
+                    }
+                    ```
+                - **Resposta de Erro:**
+                    ```json
+                    {
+                        "message": "Erro ao atualizar funcionário"
+                    }
+                    ```
+
+            4. **Deletar Funcionário**
+                - **URL:** `/employees/{id}`
+                - **Método:** `DELETE`
+                - **Descrição:** Remove um funcionário existente.
+                - **Resposta de Sucesso:**
+                    ```json
+                    {
+                        "message": "Funcionário deletado com sucesso"
+                    }
+                    ```
+                - **Resposta de Erro:**
+                    ```json
+                    {
+                        "message": "Erro ao deletar funcionário"
+                    }
+                    ```
