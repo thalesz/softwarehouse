@@ -1,0 +1,13 @@
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+
+{
+    "name": "Thales",
+    "password": "ThalesThales@example.com"
+}
+
+###
+
+GET http://localhost:3000/employees
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6eyJpZCI6Mn0sImlhdCI6MTczNzQ3OTEwOSwiZXhwIjoxNzM3NDgyNzA5fQ.Z3pbO7SdJCMqDx50LWm8h2dIqfkS0oEMsfzXCrNCgqE
